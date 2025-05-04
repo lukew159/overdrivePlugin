@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="laPyiS" name="overdrivePlugin" projectType="audioplug" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1">
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" pluginVST3Category="Distortion">
   <MAINGROUP id="kSn6pP" name="overdrivePlugin">
     <GROUP id="{B56FA262-C1ED-D8FD-EBD6-5CECE9BB958B}" name="Source">
       <FILE id="QACz5A" name="PluginProcessor.cpp" compile="1" resource="0"
