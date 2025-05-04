@@ -1,0 +1,35 @@
+# JUCE/Projucer Generated Files
+Builds/
+*.jucer.user
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+*.vcxproj.user
+*.vcxproj.filters
+
+# Build Artefacts
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+*.app
+*.vst
+*.vst3
+*.component
+*.aaxplugin
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files
+.vscode/
+.idea/
