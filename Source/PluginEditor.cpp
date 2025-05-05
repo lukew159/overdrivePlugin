@@ -14,7 +14,7 @@ OverdrivePluginAudioProcessorEditor::OverdrivePluginAudioProcessorEditor (Overdr
     : AudioProcessorEditor (&p), audioProcessor (p), valueTreeState(vts)
 {
     // Configure the Gain Slider:
-    gainSlider.setSliderStyle(juce::Slider::SliderStyle::RotaryVerticalDrag); // Or LinearHorizontal, etc.
+    gainSlider.setSliderStyle(juce::Slider::SliderStyle::Rotary); // Or LinearHorizontal, etc.
     gainSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, 80, 20); // Show value box below
 
     // Make the slider visible in the editor window
@@ -42,10 +42,6 @@ void OverdrivePluginAudioProcessorEditor::paint (juce::Graphics& g)
 {
     // (Our component is opaque, so we must completely fill the background with a solid colour)
     g.fillAll (getLookAndFeel().findColour (juce::ResizableWindow::backgroundColourId));
-
-    g.setColour (juce::Colours::white);
-    g.setFont (juce::FontOptions (15.0f));
-    g.drawFittedText ("Hello World!", getLocalBounds(), juce::Justification::centred, 1);
 }
 
 void OverdrivePluginAudioProcessorEditor::resized()
