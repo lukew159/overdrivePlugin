@@ -9,6 +9,7 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include <juce_audio_processors/juce_audio_processors.h>
 
 //==============================================================================
 /**
@@ -53,7 +54,17 @@ public:
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
 
+    //--------------------------Public Additions------------------------------------
+    // Declare the Value Tree State object
+    juce::AudioProcessorValueTreeState treeState;
+
 private:
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (OverdrivePluginAudioProcessor)
+
+    //--------------------------Private Additions-----------------------------------
+    // Function to create the parameter layout
+    juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+    // Pointer for gain paramater
+    std::atomic<float>* gainParameter = nullptr;
 };
